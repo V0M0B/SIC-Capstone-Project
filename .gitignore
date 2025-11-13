@@ -1,0 +1,37 @@
+# Archivos compilados y temporales
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de configuración local
+*.env
+*.local
+*.ini
+*.cfg
+
+
+# Logs y bases de datos temporales
+*.log
+*.sqlite3
+
+# Archivos creados por editores
+.vscode/
+.idea/
+*.swp
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# que ignore los entornos virtuales
+entorno-bot-voz/
+entorno-links/
+entorno-bot-doble/
+bot combinado/entorno-bot-doble/
+bot combinado/entorno-bot-doble/.env
+*/.env
+.env/
+.venv/
+
+#que ignore el mail
+mail.txt
