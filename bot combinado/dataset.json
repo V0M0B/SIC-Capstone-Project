@@ -1,0 +1,177 @@
+[
+  {
+    "pregunta": "¿Qué es el phishing?",
+    "respuesta": "El phishing es una técnica usada por ciberdelincuentes para engañar a las personas y hacer que revelen información confidencial, como contraseñas o datos bancarios. Ejemplo: recibes un correo que parece ser de tu banco pidiéndote actualizar tus datos. Para prevenirlo, nunca hagas clic en enlaces sospechosos y verifica siempre la dirección del remitente.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué significa malware?",
+    "respuesta": "El malware es un software malicioso diseñado para dañar, acceder o robar información de un dispositivo. Ejemplo: descargas un programa gratuito que en realidad instala un virus en tu computadora. Para prevenirlo, instala antivirus y descarga solo desde sitios oficiales.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es el ransomware?",
+    "respuesta": "El ransomware es un tipo de malware que bloquea tus archivos y exige un pago para recuperarlos. Ejemplo: un día intentas abrir tus documentos y ves un mensaje pidiendo dinero para liberarlos. Para prevenirlo, mantén copias de seguridad y evita abrir archivos desconocidos.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es la ingeniería social?",
+    "respuesta": "La ingeniería social es el uso del engaño para manipularte y obtener acceso a tus datos o sistemas. Ejemplo: alguien te llama haciéndose pasar por soporte técnico y te pide tu contraseña. Para prevenirlo, nunca compartas información personal sin verificar la identidad del solicitante.",
+    "categoria": "ataques"
+  },
+  {
+  "pregunta": "¿Qué es el malware?",
+  "respuesta": "El malware es un software malicioso que puede dañar tu dispositivo, robar datos o tomar el control del sistema. Ejemplo: un archivo que parece seguro pero instala un virus que accede a tus contraseñas. Para prevenirlo, usa antivirus, actualizá tus apps y evitá descargar contenido desconocido.",
+  "categoria": "ciberseguridad"
+    },
+   {
+    "pregunta": "¿Qué es social engineering?",
+    "respuesta": "La ingeniería social es el uso del engaño para manipularte y obtener acceso a tus datos o sistemas. Ejemplo: alguien te llama haciéndose pasar por soporte técnico y te pide tu contraseña. Para prevenirlo, nunca compartas información personal sin verificar la identidad del solicitante.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es el robo de identidad digital?",
+    "respuesta": "El robo de identidad ocurre cuando alguien utiliza tus datos personales sin permiso. Ejemplo: un ciberdelincuente usa tu número de documento para abrir una cuenta bancaria. Para prevenirlo, limita la información que compartes en redes y usa contraseñas seguras.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es el spyware?",
+    "respuesta": "El spyware es un programa que se instala sin tu consentimiento y recopila información sobre ti. Ejemplo: una aplicación gratuita rastrea tus hábitos de navegación sin avisarte. Para prevenirlo, revisa los permisos de las apps y mantén actualizado tu software.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es el ciberacoso?",
+    "respuesta": "El ciberacoso es el uso de medios digitales para hostigar o intimidar a alguien. Ejemplo: una persona recibe mensajes ofensivos constantemente en redes sociales. Para prevenirlo, bloquea al agresor, guarda evidencia y denuncia el comportamiento.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué son las contraseñas débiles?",
+    "respuesta": "Son claves fáciles de adivinar, como '123456' o 'contraseña'. Ejemplo: un hacker accede a tu cuenta porque usas la misma contraseña en varios sitios. Para prevenirlo, usa combinaciones de letras, números y símbolos, y cambia tus contraseñas periódicamente.",
+    "categoria": "buenas prácticas"
+  },
+  {
+    "pregunta": "¿Qué es un ataque DDoS?",
+    "respuesta": "Es un ataque que sobrecarga un servidor o red para dejarlo fuera de servicio. Ejemplo: un sitio web colapsa porque miles de bots lo atacan al mismo tiempo. Para prevenirlo, utiliza servicios de mitigación DDoS y monitoreo constante del tráfico.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es spoofing?",
+    "respuesta": "El spoofing consiste en falsificar una dirección o identidad para parecer confiable. Ejemplo: recibes un correo que parece provenir de tu jefe, pero es de un atacante. Para prevenirlo, verifica siempre la dirección de correo y no compartas datos sin confirmar.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es el grooming?",
+    "respuesta": "Es cuando un adulto se gana la confianza de un menor en línea con intenciones dañinas. Ejemplo: alguien se hace pasar por adolescente para acercarse a un menor en redes. Para prevenirlo, educa sobre los riesgos digitales y limita la información personal compartida.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué son las fake news?",
+    "respuesta": "Son noticias falsas difundidas para manipular opiniones o causar confusión. Ejemplo: una publicación viral asegura un hecho falso sobre una celebridad. Para prevenirlo, verifica siempre la fuente antes de compartir cualquier información.",
+    "categoria": "conceptos generales"
+  },
+  {
+    "pregunta": "¿Qué es el smishing?",
+    "respuesta": "El smishing es una forma de phishing a través de mensajes de texto. Ejemplo: recibes un SMS diciendo que ganaste un premio y piden tus datos. Para prevenirlo, no respondas ni abras enlaces sospechosos desde mensajes desconocidos.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es el vishing?",
+    "respuesta": "El vishing es una estafa telefónica donde un delincuente intenta obtener tus datos haciéndose pasar por alguien legítimo. Ejemplo: una llamada de 'tu banco' pidiéndote tu número de tarjeta. Para prevenirlo, cuelga y contacta directamente a la entidad oficial.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué son las redes Wi-Fi públicas inseguras?",
+    "respuesta": "Son redes abiertas donde los datos pueden ser interceptados fácilmente. Ejemplo: te conectas al Wi-Fi de un café y un hacker roba tus credenciales. Para prevenirlo, evita realizar operaciones sensibles y usa una VPN.",
+    "categoria": "buenas prácticas"
+  },
+  {
+    "pregunta": "¿Qué es la huella digital?",
+    "respuesta": "Es el rastro de información que dejas al usar internet. Ejemplo: tus publicaciones, comentarios y búsquedas conforman tu huella digital. Para prevenir riesgos, revisa tus configuraciones de privacidad y piensa antes de publicar.",
+    "categoria": "conceptos generales"
+  },
+  {
+    "pregunta": "¿Qué es la ciberseguridad?",
+    "respuesta": "Es el conjunto de medidas para proteger tus dispositivos y datos en línea. Ejemplo: usar antivirus, contraseñas seguras y copias de respaldo. Para fortalecerla, actualiza tus sistemas y mantente informado sobre nuevas amenazas.",
+    "categoria": "conceptos generales"
+  },
+  {
+    "pregunta": "¿Qué es el hacking ético?",
+    "respuesta": "Es cuando expertos en seguridad utilizan sus conocimientos para detectar vulnerabilidades antes que los delincuentes. Ejemplo: una empresa contrata a un hacker ético para probar la seguridad de su sistema. Para prevenir ataques, fomenta auditorías de seguridad regulares.",
+    "categoria": "conceptos generales"
+  },
+  {
+    "pregunta": "¿Qué es el spam?",
+    "respuesta": "El spam son mensajes no solicitados que saturan tu bandeja de entrada o redes. Ejemplo: correos publicitarios que llegan sin que los hayas pedido. Para prevenirlo, no compartas tu correo en sitios desconocidos y usa filtros antispam.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es la autenticación en dos pasos?",
+    "respuesta": "Es una capa extra de seguridad que pide una verificación adicional además de la contraseña. Ejemplo: al iniciar sesión, recibes un código por SMS o app. Para protegerte, habilita siempre la autenticación en dos pasos en tus cuentas más importantes.",
+    "categoria": "buenas prácticas"
+  },
+  {
+    "pregunta": "¿Qué es un firewall?",
+    "respuesta": "Un firewall es un sistema que filtra el tráfico entre tu red e internet, bloqueando accesos no autorizados. Ejemplo: impide que un atacante acceda a tu red doméstica. Para protegerte, mantenlo siempre activado y configurado correctamente.",
+    "categoria": "herramientas de protección"
+  },
+  {
+    "pregunta": "¿Qué es un antivirus?",
+    "respuesta": "Un antivirus es un programa que detecta, bloquea y elimina software malicioso. Ejemplo: identifica un virus en un archivo descargado. Para protegerte, usa un antivirus confiable y actualízalo con frecuencia.",
+    "categoria": "herramientas de protección"
+  },
+  {
+    "pregunta": "¿Qué es una VPN?",
+    "respuesta": "Una VPN (Red Privada Virtual) cifra tu conexión a internet y oculta tu dirección IP. Ejemplo: te conectas a una red pública sin que otros vean tu información. Para protegerte, usa servicios VPN confiables.",
+    "categoria": "herramientas de protección"
+  },
+  {
+    "pregunta": "¿Qué es el cifrado de datos?",
+    "respuesta": "El cifrado transforma la información en un código ilegible para protegerla. Ejemplo: los mensajes de WhatsApp están cifrados de extremo a extremo. Para protegerte, utiliza siempre plataformas que empleen cifrado.",
+    "categoria": "herramientas de protección"
+  },
+  {
+    "pregunta": "¿Qué es un keylogger?",
+    "respuesta": "Un keylogger es un programa que registra cada tecla que presionas. Ejemplo: roba tus contraseñas al escribirlas. Para prevenirlo, usa antivirus actualizado y evita instalar software desconocido.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es una botnet?",
+    "respuesta": "Una botnet es una red de dispositivos infectados que un atacante controla a distancia. Ejemplo: miles de computadoras envían spam sin que sus dueños lo sepan. Para prevenirlo, actualiza tus sistemas y no abras enlaces sospechosos.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es una vulnerabilidad de día cero?",
+    "respuesta": "Una vulnerabilidad de día cero (zero-day) es una falla desconocida que los atacantes explotan antes de que sea corregida. Ejemplo: un software es atacado antes de que su creador publique un parche. Para reducir el riesgo, mantén siempre tus programas actualizados.",
+    "categoria": "conceptos generales"
+  },
+  {
+    "pregunta": "¿Qué es un backdoor?",
+    "respuesta": "Un backdoor o puerta trasera es un acceso oculto que permite ingresar a un sistema sin autorización. Ejemplo: un hacker instala un backdoor para controlar tu equipo. Para prevenirlo, evita descargar software de fuentes no oficiales.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es un rootkit?",
+    "respuesta": "Un rootkit es un tipo de malware que oculta su presencia y la de otros programas maliciosos. Ejemplo: impide que el antivirus detecte una infección. Para protegerte, usa herramientas de detección avanzadas y mantén el sistema actualizado.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué es el clickjacking?",
+    "respuesta": "El clickjacking es una técnica en la que se ocultan botones o enlaces para que hagas clic sin saberlo. Ejemplo: un botón aparente de 'Reproducir' ejecuta una acción oculta. Para prevenirlo, evita sitios poco confiables y usa bloqueadores de scripts.",
+    "categoria": "ataques"
+  },
+  {
+    "pregunta": "¿Qué son las copias de seguridad?",
+    "respuesta": "Las copias de seguridad o backups son duplicados de tus archivos guardados en otro lugar. Ejemplo: recuperar documentos tras un ataque ransomware. Para protegerte, realiza copias periódicas en la nube o en un disco externo.",
+    "categoria": "buenas prácticas"
+  },
+  {
+    "pregunta": "¿Qué es un gestor de contraseñas?",
+    "respuesta": "Es una herramienta que guarda y genera contraseñas seguras para tus cuentas. Ejemplo: almacena de forma cifrada tus claves y autocompleta los inicios de sesión. Para protegerte, usa gestores confiables y bloqueados con contraseña maestra.",
+    "categoria": "herramientas de protección"
+  },
+  {
+    "pregunta": "¿Qué es la educación digital?",
+    "respuesta": "La educación digital es el conjunto de conocimientos y hábitos para usar internet de forma segura. Ejemplo: reconocer intentos de phishing o configurar la privacidad. Para fortalecerla, infórmate y enseña buenas prácticas digitales.",
+    "categoria": "buenas prácticas"
+  }
+]

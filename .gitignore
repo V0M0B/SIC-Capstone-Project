@@ -32,6 +32,10 @@ bot combinado/entorno-bot-doble/.env
 */.env
 .env/
 .venv/
+/entorno-nuevo
 
 #que ignore el mail
 mail.txt
+
+# Archivo de variables ocultas
+.env
