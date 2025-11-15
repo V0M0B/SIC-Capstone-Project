@@ -184,3 +184,6 @@ C. Flujo de Análisis de Imagen (main.py: manejar_foto(message))
         Se entrega la respuesta final al usuario.
 
 ---
+
+* ⚠️Testeo de URL seguro:  utilizar enlaces de prueba otorgados por Google Cloud:Webrisk.
+    Los encuentra acá: https://cloud.google.com/web-risk/docs/using-sample-app?hl=es-419#download_code (punto D ofrece url de ejemplos maliciosos)
