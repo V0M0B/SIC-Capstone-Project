@@ -19,7 +19,6 @@ Es un proyecto ideal que unifica lo aprendido sobre la integración de múltiple
 - [🧠 Tecnologías Utilizadas](#-tecnologías-utilizadas)
 - [🔧 Requisitos Previos y Configuración](#-requisitos-previos-y-configuración)
 - [🚀 Estructura del Proyecto y Flujo de Lógica](#-estructura-del-proyecto-y-flujo-de-lógica)
-- [🎨 Personalización y Próximos Pasos](#-personalización-y-próximos-pasos)
 
 ---
 
@@ -139,7 +138,9 @@ Verás el mensaje Bot CiberInfo en ejecución... y el bot comenzará a responder
 
 ---
 
-🚀 Estructura del Proyecto y Flujo de Lógica
+## 🚀 Estructura del Proyecto y Flujo de Lógica
+
+---
 
 ```
 El corazón del bot se encuentra en `main.py y el módulo `logica.py.
