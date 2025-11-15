@@ -137,12 +137,12 @@ python main.py
 Verás el mensaje Bot CiberInfo en ejecución... y el bot comenzará a responder en Telegram.
 
 ---
-
+```
 ## 🚀 Estructura del Proyecto y Flujo de Lógica
 
 ---
 
-```
+
 El corazón del bot se encuentra en `main.py y el módulo `logica.py.
 
 A. Archivos Clave
