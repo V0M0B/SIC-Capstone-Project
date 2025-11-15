@@ -1,3 +1,6 @@
+#BOT COMBINADO (Análisis de imagen, Procesamiento de audio, Análisis de sentimiento, Integración de API URL) + CIBERBOT IA (Groq + Dataset)
+
+#Importaciones base
 import os
 import json
 import requests
@@ -29,17 +32,20 @@ if not TELEGRAM_TOKEN:
 if not GROQ_API_KEY:
     raise ValueError("GROQ_API_KEY no está configurado en las variables de entorno")
 
-# Crear cliente Groq
+# Crear cliente Groq pra su funcionamiento
 cliente_groq = Groq(api_key=GROQ_API_KEY)
 
-# Crear instancia del bot
+# Ruta al archivo JSON que contiene el dataset de preguntas y respuestas
+DATASET_PATH = "bot_combinado/dataset.json"
+
+# Crear instancia del bot de telegram
 bot = tlb.TeleBot(TELEGRAM_TOKEN)
 
 # Cargar analizador de sentimiento
 analizador_sentimiento = cargar_analizador_sentimiento()
 
 # Cargar dataset
-DATASET_PATH = "dataset.json"
+DATASET_PATH = "bot_combinado/dataset.json"
 def cargar_dataset():
     try:
         with open(DATASET_PATH, 'r', encoding='utf-8') as f:
@@ -50,21 +56,19 @@ def cargar_dataset():
 
 dataset = cargar_dataset()
 
-# ------------------------------
-# Handlers
-# ------------------------------
+# Handlers de módulos
 
-# Voz
+# Voz transcripción y respuesta
 @bot.message_handler(content_types=['voice'])
 def handle_voice_message(message):
     handle_voice(bot, message, dataset, analizador_sentimiento)
 
-# Links
+# Analisis de links
 @bot.message_handler(func=lambda msg: msg.text and "http" in msg.text)
 def handle_link_message(message):
     handle_link(bot, message)
 
-# Imágenes
+# Analisis de imágenes
 @bot.message_handler(content_types=['photo'])
 def manejar_foto_handler(message):
     manejar_foto(bot, message, cliente_groq)
@@ -87,7 +91,7 @@ def send_welcome(message):
 # Texto general (Ciberseguridad + Groq)
 @bot.message_handler(func=lambda message: message.text and "http" not in message.text)
 def responder(message):
-    pregunta = message.text<a
+    pregunta = message.text 
 
     # 1. Buscar en dataset
     respuesta = buscar_en_dataset(pregunta, dataset)
@@ -102,7 +106,7 @@ def responder(message):
     es_ciber = es_relacionada(pregunta, dataset)
     bot.send_chat_action(message.chat.id, 'typing')
 
-    if es_ciber:
+    if es_ciber: #Generar respuesta con groq
         respuesta_ia = respuesta_groq(pregunta, es_ciber, analizador_sentimiento)
     else:
         respuesta_ia = "Solo puedo responder sobre temas de ciberseguridad."
@@ -110,9 +114,9 @@ def responder(message):
     # 3. Responder
     bot.reply_to(message, respuesta_ia)
 
-# ------------------------------
+
 # Iniciar bot
-# ------------------------------
+
 if __name__ == "__main__":
-    print("🤖 Bot CiberInfo en ejecución...")
+    print("Bot CiberInfo en ejecución...")
     bot.infinity_polling()

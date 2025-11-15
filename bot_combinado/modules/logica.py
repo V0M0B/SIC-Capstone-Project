@@ -34,28 +34,35 @@ def buscar_en_dataset(pregunta, dataset):
             texto = re.sub(r'\s+', ' ', texto)
             return texto
 
+        # 1. Normalizar la pregunta del usuario 
         pregunta_norm = normalizar(pregunta)
+        
+        # 2. Preparar variables
         mejor_coincidencia = None
         puntaje_mas_alto = 0.85  # umbral de similitud
 
-        for item in dataset:
+        # 3. Acceder a la LISTA correcta del dataset
+        lista_de_preguntas = dataset.get("preguntasGenerales", [])
+
+        # 4. Iterar sobre la LISTA 
+        for item in lista_de_preguntas:
             similitud = SequenceMatcher(
                 None,
                 normalizar(item['pregunta']),
                 pregunta_norm
             ).ratio()
 
+            # 5. Guardar la mejor coincidencia 
             if similitud > puntaje_mas_alto:
                 mejor_coincidencia = item['respuesta']
                 puntaje_mas_alto = similitud
 
+        # 6. Devolver el resultado
         return mejor_coincidencia
 
     except Exception as e:
         print(f"Error en buscar_en_dataset: {e}")
         return None
-
-
 
 # FUNCIÓN: Determinar si el mensaje es de ciberseguridad
 
@@ -109,7 +116,7 @@ def respuesta_groq(mensaje, es_tema_ciber, analizador_sentimiento=None):
 
     sistema_adicional = ""
 
-    # --- Análisis de sentimiento opcional ---
+    # Análisis de sentimiento
     if analizador_sentimiento:
         try:
             resultado = analizador_sentimiento(mensaje)[0]
