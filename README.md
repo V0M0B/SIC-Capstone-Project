@@ -137,21 +137,28 @@ python main.py
 Verás el mensaje Bot CiberInfo en ejecución... y el bot comenzará a responder en Telegram.
 
 ---
-
+```
 ## 🚀 Estructura del Proyecto y Flujo de Lógica
 
 ---
 
-```
+
 El corazón del bot se encuentra en `main.py y el módulo `logica.py.
 
 A. Archivos Clave
+
     main.py: Inicializa el bot, carga el modelo de sentimiento, y dirige el flujo de mensajes (texto, voz, links, fotos).
+    
     dataset.json: Contiene el glosario de ciberseguridad y los criterios de detección de Phishing por imagen.
+    
     modules/logica.py: Lógica central (búsqueda en dataset y la llamada a Groq con restricción temática).
+    
     modules/voice_transcriber.py: Maneja la descarga y transcripción de audios con Groq Whisper.
+    
     modules/link_checker.py: Implementa el chequeo de URL con Google WebRisk.
+    
     modules/sentiment_analyzer.py: Carga y usa el modelo de Hugging Face para el análisis de sentimiento.
+    
     modules/image_spam_detector.py: Maneja la descarga, OCR y el análisis de fotos para la detección de Phishing.
 
 B. Flujo de Respuesta de Texto (main.py: responder(message))

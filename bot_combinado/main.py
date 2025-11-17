@@ -91,25 +91,42 @@ def send_welcome(message):
 # Texto general (Ciberseguridad + Groq)
 @bot.message_handler(func=lambda message: message.text and "http" not in message.text)
 def responder(message):
-    pregunta = message.text 
+    pregunta = message.text
 
-    # 1. Buscar en dataset
+    # 1. Analizar sentimiento
+    sentimiento, confianza = analizar_texto(pregunta)
+    frase_empatica = ""
+
+    # Si detectamos emoción negativa ( el umbral en 0.6 para una detección más sensible)
+    if sentimiento == 'NEG' and confianza > 0.6:
+        frase_empatica = "Entiendo tu frustración y lamento que estés pasando por esto. "
+
+   # 2. Buscar en dataset
     respuesta = buscar_en_dataset(pregunta, dataset)
     if respuesta:
         print("Respondiendo desde el dataset.")
         bot.send_chat_action(message.chat.id, 'typing')
-        bot.reply_to(message, respuesta)
+
+        # Analisis de sentimiento + respuesta desde dataset
+        respuesta_final = frase_empatica + respuesta
+            
+        bot.reply_to(message, respuesta_final)
         return
 
-    # 2. Verificar si pertenece a ciberseguridad
+   # 3. Verificar si pertenece a ciberseguridad
     print("No encontrado en dataset, consultando Groq...")
     es_ciber = es_relacionada(pregunta, dataset)
     bot.send_chat_action(message.chat.id, 'typing')
 
-    if es_ciber: #Generar respuesta con groq
+    if es_ciber: # Generar respuesta con groq
+        # Analisis de sentimientos + Instrucción de groq
         respuesta_ia = respuesta_groq(pregunta, es_ciber, analizador_sentimiento)
     else:
-        respuesta_ia = "Solo puedo responder sobre temas de ciberseguridad."
+        # Analisis de sentimiento aunque no sea el tema
+        if frase_empatica:
+            respuesta_ia = f"{frase_empatica}\nSin embargo, solo puedo responder sobre temas de ciberseguridad."
+        else:
+            respuesta_ia = "Lo siento, Solo puedo responder sobre temas de ciberseguridad."
 
     # 3. Responder
     bot.reply_to(message, respuesta_ia)

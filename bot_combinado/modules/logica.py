@@ -75,7 +75,7 @@ def es_relacionada(pregunta, dataset):
         pregunta_lower = pregunta.lower()
         
         palabras_clave = [
-            "ciberseguridad", "phishing", "malware", "ransomware", "spyware",
+            "ciberseguridad", "hackearon", "hackeo" "phishing", "malware", "ransomware", "spyware",
             "vishing", "smishing", "virus", "troyano", "contraseña", "seguridad",
             "ingeniería social", "hacker", "hacking", "ethical hacking", "hacking ético",
             "ciberacoso", "spam", "suplantación", "spoofing", "identidad", "vpn",
@@ -83,7 +83,7 @@ def es_relacionada(pregunta, dataset):
             "robo de identidad", "ataque", "información", "riesgo", "privacidad",
             "firewall", "antivirus", "cifrado", "keylogger", "botnet", "backdoor",
             "rootkit", "clickjacking", "educación digital", "copias de seguridad",
-            "gestor de contraseñas", "vulnerabilidad", "zero-day", "seguridad en redes sociales"
+            "gestor de contraseñas", "vulnerabilidad", "zero-day", "seguridad en redes sociales", "ataque", "man in the middle", "grooming", "groomer"
         ]
 
         # Palabras clave directas
@@ -123,10 +123,12 @@ def respuesta_groq(mensaje, es_tema_ciber, analizador_sentimiento=None):
             sentimiento = resultado.get('label', 'NEU')
             confianza = resultado.get('score', 0)
 
-            if sentimiento == "NEG" and confianza > 0.8:
+            if sentimiento == "NEG" and confianza > 0.5:
                 sistema_adicional = (
-                    "El usuario parece molesto o preocupado. "
-                    "Responde con un tono empático, calmado y tranquilizador. "
+                    "IMPORTANTE: El usuario ha sido detectado con emociones negativas (enojo, miedo o frustración). "
+                    "Tu respuesta DEBE comenzar obligatoriamente con una frase de empatía y calma "
+                    "(ej: 'Lamento escuchar eso', 'Entiendo tu preocupación', 'Mantén la calma'). "
+                    "Luego responde la consulta técnica. "
                 )
         except Exception as e:
             print(f"Error durante análisis de sentimiento: {e}")
